@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DreamWorks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500&family=Montserrat:wght@300;400;500&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#FFFFFF",
+              yellow: "#FECC02",
+              black: "#131313",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-white h-20">
+    <nav class="bg-white h-20 fixed top-0 right-0 left-0">
       <div
         class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas px-5"
       >
-        <h1>DreamWorks Production</h1>
+        <h1 class="text-2xl">DreamWorks Production</h1>
         <ul class="flex text-lg gap-8">
           <li>About Us</li>
           <li>Our Movies</li>
@@ -22,18 +46,18 @@
       </div>
     </nav>
     <!--main header -->
-    <section class="bg-red-500 h-screen pt-20 bg-[url('')] bg-cover">
-      <div class="h-full w-full max-w-7xl max-auto px-5 flex-item-center">
-        <div>
-          <h2>Movie P S</h2>
-          <h1>F M t</h1>
-          <h1>Perfection</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-            rerum!
+    <section class="h-screen pt-20 bg-[url('images/banner.jpg')] bg-cover">
+      <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+        <div class="font-bebas">
+          <h2 class="text-white">Movie Production Studio</h2>
+          <h1 class="text-white text-7xl">Films Made to</h1>
+          <h1 class="text-yellow text-7xl">Perfection</h1>
+          <p class="font-montserrat text-white max-w-lg mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <button
-            class="border border-white py-2 px-2 text-white text-lg hover:bg-yellow-200 hover:text-black transition-all"
+            class="border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all"
           >
             Discover More
           </button>
@@ -58,48 +82,49 @@
           </div>
         </div>
         <div class="grid grid-cols-3 p-5 gap-5">
-            <div class="bg-black h-1.5 w-full mb-2">
-                <h1 class="text-6xl">Our Vision</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloremque.</p>
-            </div>
-            <div class="bg-black h-1.5 w-full mb-2">
-                <h1 class="text-6xl">Our Vision</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloremque.</p>
-            </div>
-            <div class="bg-black h-1.5 w-full mb-2">
-                <h1 class="text-6xl">Our Vision</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloremque.</p>
-            </div>
+          <div class="bg-black h-1.5 w-full mb-2">
+            <h1 class="text-6xl">Our Vision</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              doloremque.
+            </p>
+          </div>
+          <div class="bg-black h-1.5 w-full mb-2">
+            <h1 class="text-6xl">Our Vision</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              doloremque.
+            </p>
+          </div>
+          <div class="bg-black h-1.5 w-full mb-2">
+            <h1 class="text-6xl">Our Vision</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              doloremque.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- our movie -->
     <section class="bg-gray py-20">
-        <div>
-            <h2>Our Movies</h2>
-            <div class="flex">
-                <h1>Movie Collection</h1>
-                <button
+      <div>
+        <h2>Our Movies</h2>
+        <div class="flex">
+          <h1>Movie Collection</h1>
+          <button
             class="border border-white py-2 px-2 text-white text-lg hover:bg-yellow-200 hover:text-black transition-all"
           >
             Discover More
           </button>
-            </div>
         </div>
-        <div class="grid grid-cols-4">
-            <div class="border-2 border-black">
-
-            </div>
-            <div class="border-2 border-black">
-
-            </div>
-            <div class="border-2 border-black">
-
-            </div>
-            <div class="border-2 border-black">
-
-            </div>
-        </div>
+      </div>
+      <div class="grid grid-cols-4">
+        <div class="border-2 border-black"></div>
+        <div class="border-2 border-black"></div>
+        <div class="border-2 border-black"></div>
+        <div class="border-2 border-black"></div>
+      </div>
     </section>
   </body>
 </html>
